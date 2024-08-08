@@ -1,0 +1,68 @@
+:root {
+  --clr-navy: rgb(1, 32, 78);
+  --clr-teal: rgb(2, 131, 145);
+  --clr-beige: rgb(246, 220, 172);
+  --clr-orange: rgb(254, 174, 111); 
+}
+
+body {
+  background-color: var(--clr-orange);
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--clr-navy);
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px 0px black;
+}
+
+.container {
+  background-color: var(--clr-beige);
+  height: 250px;
+  width: 270px;
+  padding: 1rem;
+  box-shadow: 0 0 6px 5px var(--clr-teal);
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-div label {
+  font-size: 1.1rem;
+  font-weight: 550;
+  margin-bottom: 0.9rem;
+}
+
+.input-div input {
+  font-size: 1.1rem;
+  
+}
+.input-div input:focus {
+  outline: 1px solid var(--clr-teal);
+}
+.buttons-div {
+  text-align: center;
+  margin-top: 1rem;
+}
+button {
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--clr-teal);
+  border-radius: 3px;
+}
+button:active {
+  background-color: rgb(286, 250, 272);
+}
+#results-div {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.correct {
+  color: green;
+}
